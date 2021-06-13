@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>SiLK HTTP Server</title>
-		<meta name="author" content="JakeNTech">
 		<!--Custom CSS Sheets (Saved locally)-->
 		<link rel="stylesheet" media="screen" href="assets/css/main.css">
 		<link rel="stylesheet" media="screen" href="assets/css/navigation_bar.css">
@@ -11,11 +10,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	</head>
 	<body onload="home()">
+		<!-- Nav -->
 		<div class="navigation_bar">
 			<a href="#" onclick="home()" class="active" id="home_page">Home</a>
+			<a href="#" onclick="today_stats()" class="in-active" id="today_stats">Today Stats</a>
 		</div>
+		<!-- Where all the magic happens -->
 		<div id="dynamic_page">
 		</div>
+		<!-- Some bad JS -->
 		<script type="text/javascript" src="/assets/js/interaction.js"></script>
 	</body>
 </html>
