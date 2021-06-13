@@ -1,0 +1,23 @@
+.navigation_bar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  }
+  /* Style the topnav links */
+  .navigation_bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* Change color on hover */
+  .navigation_bar a:hover {
+    background-color: #e5559b;
+    color: white;
+  }
+  .active{
+    background-color: #34b1eb;
+  }

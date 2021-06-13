@@ -1,0 +1,98 @@
+/*style.css
+JakeNTech
+19-04-19*/
+/*body -- NOTE: This is only to apply the Google Font!*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    text-align: center;
+    background-color: #a1a6ad;
+    color: white;
+    padding: 0.5%;
+}
+#center_box {
+	position: relative;
+ 	margin: auto;
+	text-align:center;
+}
+/*User Table*/
+#user_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+}
+#even {
+    background-color: #f2f2f2;
+}
+th {
+    background-color: #34b1eb;
+    color: white;
+    font-weight: bold;
+}
+#form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/*CSS Style for the Text Inputs/Forms*/
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+/*Style for the Search,New and Delete and Save buttons*/
+#btnSearchUser, #btnNewUser, #btnDeleteUser, #btnSaveUser{
+    width: 30%;
+    background-color: #34b1eb;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+} 
+/*Style for when the cursor hovers over the save,new and page button(s)*/
+#btnSearchUser:hover, #btnNewUser:hover,#btnPrevious:hover, #btnNext:hover, #btnSaveUser:hover{
+    background-color: #45a049;
+}
+/*Style for whe nthe cursor hovers over the delete button*/
+#btnDeleteUser:hover{
+    background-color: #eb4034;
+}
+/*Styles for the table navigation buttons*/
+#btnPrevious, #btnNext{
+    width:25%;
+    background-color: #34b1eb;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#btnPrevious{
+    float:left;
+}
+#btnNext{
+    float:right
+}
+#btnRefresh{
+    float:center;
+}
+/*User avatar style*/
+#avatarPreview, #modifyUserAvatarPreview, #userAvatarPreview{
+    border-radius: 50%;
+    width: 64px;
+}
+input[disabled] {
+    color: #b9bdba;
+}

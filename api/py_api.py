@@ -5,16 +5,24 @@ JakeNTech
 2021
 """
 from datetime import datetime
-import subprocess
-"""
-API for Getting Data out of SiLK
-"""
-def api(action):
-    if action == "current_time":
-        to_return = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    elif action == "echo_system":
-        result = subprocess.run(["ls","-a"], capture_output=True, text=True)
-        to_return = result.stdout
+from os import popen as command_runner
+from flask import jsonify
+
+def request(action):
+    # if action == "current_time":
+    #    to_return = {"current_time": current_time()}
+    # elif action == "echo_system":
+    #     to_return = {"echo_system": run_os_command("ls -a")}
+    if action == "silk_status":
+        # Actual comands commented out as SiLK isn't installed in dev enviroment
+        #yaf_status = run_os_command("service yaf status")
+        #rwflowpack_status = run_os_command("service rwflowpack status")
+        yaf_status = command_runner("echo Stopped").read()
+        rwflowpack_status = command_runner("echo Stopped").read()
+        to_return = {"rwflowpack": rwflowpack_status ,"yaf": yaf_status}
     else:
-        to_return = "400 Bad Request."
-    return(to_return)
+        to_return = {"Error":"400 Bad Request"}
+    return jsonify(to_return)
+
+def current_time():
+    return datetime.now().strftime("%d/%m/%Y %H:%M:%S")

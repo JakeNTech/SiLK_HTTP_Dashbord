@@ -23,16 +23,16 @@ def send_js(file):
 @app.route('/assets/css/<file>')
 def send_css(file):
     css_path = "assets/css/"+file
-    return app.send_static_file(js_path)
+    return app.send_static_file(css_path)
 
 @app.route('/assets/img/<file>')
 def send_img(file):
     img_path = "assets/img/"+file
-    return app.send_static_file(js_path)
+    return app.send_static_file(img_path)
 
 @app.route('/api/<action>',methods=['GET'])
 def current_time(action):
-    return py_api.api(action)
+    return py_api.request(action)
 
 if __name__ == "__main__":
     app.run()

@@ -1,12 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>SiLK HTTP Server</title>
+		<meta name="author" content="JakeNTech">
+		<!--Custom CSS Sheets (Saved locally)-->
+		<link rel="stylesheet" media="screen" href="assets/css/main.css">
+		<link rel="stylesheet" media="screen" href="assets/css/navigation_bar.css">
+		<!--Google Font StyleSheet (Loded in)-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<div id="time_box">
-			<p>The Time is: </p>
+	<body onload="home()">
+		<div class="navigation_bar">
+			<a href="#" onclick="home()" class="active" id="home_page">Home</a>
 		</div>
-		<button onclick="get_time()">Get Time!</button>
-		<script type="text/javascript" src="/assets/js/interaction.js">get_time()</script>
+		<div id="dynamic_page">
+		</div>
+		<script type="text/javascript" src="/assets/js/interaction.js"></script>
 	</body>
 </html>
