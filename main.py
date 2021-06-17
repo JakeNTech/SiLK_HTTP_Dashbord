@@ -5,7 +5,7 @@ JakeNTech
 2021
 """
 from flask import Flask, jsonify
-from api import py_api 
+from api import py_api, configure
 
 app = Flask(__name__)
 
@@ -23,9 +23,11 @@ def send_js(file):
 def send_css(file):
     css_path = "assets/css/"+file
     return app.send_static_file(css_path)
-@app.route('/assets/img/<file>')
+
+# Send Graphs
+@app.route('/assets/img/temp_graphs/<file>')
 def send_img(file):
-    img_path = "assets/img/"+file
+    img_path = "assets/img/temp_graphs/"+file
     return app.send_static_file(img_path)
 
 # Deal with API requests...by passing them to the other python file and then back to JS.
@@ -34,5 +36,6 @@ def api_call(action):
     return jsonify(py_api.api(action))
 
 if __name__ == "__main__":
-    py_api.configure("./config.json")
+    configure.init("./config.json")
+    print("Configuration Loaded!")
     app.run()

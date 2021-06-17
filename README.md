@@ -27,3 +27,5 @@ Details about how to use the configuration file see <https://github.com/JakeNTec
 	"decimal_places":2
 }
 ```
+## Documentaion
+To view all the documentaion for this project please see <https://github.com/JakeNTech/SiLK_HTTP_Dashbord/blob/main/docs/> the pages are broken down into the names of the different scripts and files that are used in this project.

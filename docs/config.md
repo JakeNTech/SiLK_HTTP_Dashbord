@@ -22,3 +22,6 @@ Some of the data shown in the HTTP site is rounded to make it look nicer, while 
 "decimal_places":100
 ```
 (I would't recommend using 100 decimal places though!)
+
+## Implimentaion
+The JSON file is loaded in `/api/configure.py` to allow access to the global variables it declares.
