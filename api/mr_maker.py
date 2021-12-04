@@ -1,3 +1,4 @@
+
 import matplotlib.pyplot as plt
 from api import configure
 
@@ -6,7 +7,16 @@ plt.rcParams["figure.figsize"] = (20,10)
 def convert_to_unit(x):
     return x/configure.G_data_unit
 
-def line_graph_chunk_data(df,file_name):
+def graph_chunk_data(df,file_name):
+    """Summary
+    
+    Args:
+        df (DataFrame): DataFrame for the Chunk Data
+        file_name (String): Desired name of output files
+    
+    Returns:
+        TYPE: JSON, location of each Graph and what it shows
+    """
     # Bytes_Time
     df_time = list(range(0,len(df["Date"])))
     df['Bytes'] = df['Bytes'].map(convert_to_unit)

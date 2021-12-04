@@ -11,132 +11,16 @@ header{
     color: white;
     padding: 0.5%;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 #center_box {
 	position: relative;
  	margin: auto;
 	text-align:center;
 }
-/*User Table*/
-#user_table {
-    border-collapse: collapse;
-    width: 100%;
-}
-th, td {
-    padding: 8px;
-}
-#even {
-    background-color: #f2f2f2;
-}
-th {
-    background-color: #34b1eb;
-    color: white;
-    font-weight: bold;
-}
-#form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-/*CSS Style for the Text Inputs/Forms*/
-input[type=text], select {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    text-align: center;
-}
-/*Style for the Search,New and Delete and Save buttons*/
-#btnSearchUser, #btnNewUser, #btnDeleteUser, #btnSaveUser{
-    width: 30%;
-    background-color: #34b1eb;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-} 
-/*Style for when the cursor hovers over the save,new and page button(s)*/
-#btnSearchUser:hover, #btnNewUser:hover,#btnPrevious:hover, #btnNext:hover, #btnSaveUser:hover{
-    background-color: #45a049;
-}
-/*Style for whe nthe cursor hovers over the delete button*/
-#btnDeleteUser:hover{
-    background-color: #eb4034;
-}
-/*Styles for the table navigation buttons*/
-#btnPrevious, #btnNext{
-    width:25%;
-    background-color: #34b1eb;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-#btnPrevious{
-    float:left;
-}
-#btnNext{
-    float:right
-}
-#btnRefresh{
-    float:center;
-}
-/*User avatar style*/
-#avatarPreview, #modifyUserAvatarPreview, #userAvatarPreview{
-    border-radius: 50%;
-    width: 64px;
-}
-input[disabled] {
-    color: #b9bdba;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+#graphs{
+    max-width:100%;
+    max-height:100%;
 }

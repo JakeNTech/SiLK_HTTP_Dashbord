@@ -37,5 +37,4 @@ def api_call(action):
 
 if __name__ == "__main__":
     configure.init("./config.json")
-    print("Configuration Loaded!")
     app.run()
