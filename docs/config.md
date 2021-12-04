@@ -22,6 +22,19 @@ Some of the data shown in the HTTP site is rounded to make it look nicer, while 
 "decimal_places":100
 ```
 (I would't recommend using 100 decimal places though!)
-
-## Implimentaion
+## Sensor - NOT YET IMPLEMENTED
+Silk allows for multiple sensors to be configured, with whatever name you like. This can be controlled with the below:
+```JSON
+"sensor_name":"S0"
+```
+This currently has no use
+## Implementation of Config file
 The JSON file is loaded in `/api/configure.py` to allow access to the global variables it declares.
+## Example of Completed JSON
+```JSON
+{
+	"data_unit":"megabytes",
+	"decimal_places":2,
+	"sensor_name":"S0"
+}
+```

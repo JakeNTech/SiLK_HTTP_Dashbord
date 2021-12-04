@@ -1,10 +1,10 @@
 import json
 def init(path):
-    config_file = open(path,"r").read()
-    config_file = json.loads(config_file)
     global G_decimal_places
     global G_data_unit
     global G_string_data_unit
+    config_file = open(path,"r").read()
+    config_file = json.loads(config_file)
     # Use Try incase it's not in the config file
     try:
         # Define the devision to convert Bytes from or to leave them as Bytes.
@@ -32,3 +32,8 @@ def init(path):
         G_decimal_places = config_file["decimal_places"]
     except:
         G_decimal_places = 3
+    # Sensor Name
+    try:
+        G_Sensor_name = config_file["sensor_name"]
+    except:
+        G_Sensor_name = "S0"

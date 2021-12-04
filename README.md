@@ -29,7 +29,8 @@ Details about how to use the configuration file see <https://github.com/JakeNTec
 ```JSON
 {
 	"data_unit":"megabytes",
-	"decimal_places":2
+	"decimal_places":2,
+	"sensor_name":"S0"
 }
 ```
 ## Documentaion
